@@ -12,7 +12,7 @@ The original data can be downloaded [here](https://github.com/coopersnail/RepDat
 
 ```r
 setwd("~/Documents/data_science_coursera/rr")
-# setwd('~/data_science_coursera/rr')
+
 act <- read.csv("activity.csv", header = T, stringsAsFactor = F)
 head(act)
 ```
@@ -334,3 +334,4 @@ xyplot(average_steps_wd$average_steps ~ average_steps_wd$interval | average_step
 
 ![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17.png) 
 
+Based on the plots, on the weekdays there is a large peak in the average number of steps taken early in the day, at approximately eight o'clock in the morning, followed by much reduced activity until about seven o'clock in the evening, when there is another but smaller peak. On the contrary, there is moderately high level of activity throughout the days on the weekend. This difference in the pattern of activity probably reflects that people tend to settle into long period of inactivity at their offices between their morning and evening commute whereas they tend to walk more throughout the day on weekends. 
